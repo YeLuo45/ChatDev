@@ -1,0 +1,171 @@
+/**
+ * ChatDev 2.0 Docs - Custom Dark Theme
+ * VitePress overrides for dark theme
+ */
+
+:root {
+  --vp-c-bg: #1a1a2e;
+  --vp-c-bg-alt: #16162a;
+  --vp-c-bg-elv: #1e1e3a;
+  --vp-c-bg-soft: #12121f;
+
+  --vp-c-text-1: #e0e0e0;
+  --vp-c-text-2: #aaa;
+  --vp-c-text-3: #888;
+
+  --vp-c-brand-1: #6c5ce7;
+  --vp-c-brand-2: #5b4cdb;
+  --vp-c-brand-3: #4a3cc4;
+  --vp-c-brand-soft: #3d2d8c;
+
+  --vp-c-divider: #2a2a4a;
+  --vp-c-border: #2a2a4a;
+
+  --vp-c-gutter: #1a1a2e;
+
+  --vp-nav-bg-color: #16162a;
+  --vp-sidebar-bg-color: #16162a;
+
+  --vp-code-block-bg: #0d0d1a;
+  --vp-code-bg: #12121f;
+  --vp-code-color: #e0e0e0;
+}
+
+/* Navigation */
+.VPNav {
+  background-color: var(--vp-nav-bg-color) !important;
+  border-bottom: 1px solid var(--vp-c-divider) !important;
+}
+
+.VPNavBar {
+  background-color: var(--vp-nav-bg-color) !important;
+}
+
+.VPNavBarTitle .title {
+  color: #6c5ce7 !important;
+  font-weight: bold;
+}
+
+/* Sidebar */
+.VPSidebar {
+  background-color: var(--vp-sidebar-bg-color) !important;
+  border-right: 1px solid var(--vp-c-divider) !important;
+}
+
+.VPSidebarItem .text {
+  color: #e0e0e0 !important;
+}
+
+.VPSidebarItem.is-active .item .text {
+  color: #6c5ce7 !important;
+}
+
+/* Content */
+.vp-doc h1, .vp-doc h2, .vp-doc h3 {
+  color: #6c5ce7 !important;
+}
+
+.vp-doc h1 {
+  font-size: 2.5em;
+  margin-bottom: 1em;
+}
+
+.vp-doc h2 {
+  border-bottom: 1px solid var(--vp-c-divider);
+  padding-bottom: 0.5em;
+}
+
+/* Tables */
+.vp-doc table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.vp-doc th {
+  background-color: var(--vp-c-bg-alt);
+  color: #6c5ce7;
+  padding: 12px;
+  border: 1px solid var(--vp-c-divider);
+}
+
+.vp-doc td {
+  padding: 10px 12px;
+  border: 1px solid var(--vp-c-divider);
+  color: #aaa;
+}
+
+.vp-doc tr:hover {
+  background-color: var(--vp-c-bg-soft);
+}
+
+/* Code blocks */
+.vp-doc div[class*="language-"] {
+  background-color: var(--vp-code-block-bg) !important;
+  border: 1px solid var(--vp-c-divider);
+  border-radius: 8px;
+}
+
+.vp-doc code {
+  background-color: var(--vp-code-bg);
+  color: #e0e0e0;
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-family: 'Courier New', Consolas, monospace;
+}
+
+.vp-doc div[class*="language-"] code {
+  background: transparent !important;
+  color: #e0e0e0;
+}
+
+/* Inline code */
+.vp-doc :not(pre) > code {
+  background-color: var(--vp-code-bg) !important;
+  border: 1px solid var(--vp-c-divider);
+  color: #f1fa8c;
+}
+
+/* Blockquotes */
+.vp-doc blockquote {
+  background-color: var(--vp-c-bg-alt);
+  border-left: 3px solid #6c5ce7;
+  padding: 16px 20px;
+  margin: 16px 0;
+  border-radius: 0 8px 8px 0;
+}
+
+.vp-doc blockquote p {
+  color: #aaa;
+  margin: 0;
+}
+
+/* Footer */
+.VPFooter {
+  background-color: var(--vp-c-bg-alt) !important;
+  border-top: 1px solid var(--vp-c-divider) !important;
+  color: #555;
+}
+
+/* Home page */
+.VPHome {
+  background-color: var(--vp-c-bg) !important;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--vp-c-bg);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--vp-c-divider);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #3a3a5a;
+}
